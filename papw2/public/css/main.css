@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body
+{
+	font-size: 20px;
+}
+
+.app
+{
+	font-size: 50px;
+}
+
+.color1
+{
+color:#33b5e5;
+}
+
+.color2
+{
+color:#ff4444;
+}
+
+.color3
+{
+color:#2ecc71;
+}
+
+.color4
+{
+	color: rgb(30,70,55);
+}
+
+.color5
+{
+	color: #f39c12;
+}
+
+.contenido-scrollspy
+{
+	overflow-y: scroll;
+	height: 550px;
+}
+
+
+
+

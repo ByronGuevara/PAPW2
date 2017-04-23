@@ -1,0 +1,125 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 12pt;
+	background-image: url("../img/Fondo.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+}
+
+
+#general{
+	margin: 0 auto;	
+	background-color: rgba(204,178,141,0.8);
+	height: 122px;
+	border-radius:2px;
+	box-shadow:0 0.6px 0.9px 0.6px;
+	width: 80%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+	padding-top: 0.7em;
+}
+
+.iconos-header{
+	color: rgb(155,47,47);
+	/*color: rgb(195,52,52);*/
+	font-size: 300%;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.iconos-header:hover{
+	color: rgb(210,52,52); /* Green */
+}
+
+.quitar_a:hover{
+	text-decoration: none;
+}
+
+.iconos
+{
+	background-image: url("../img/Fondo.png");
+	box-shadow:0 0.1px 0.1px 0.1px;
+	border-radius:4px;
+	padding: 10px 2px 10px 2px;
+	width: 160px;
+	margin-top: 1em;
+}
+
+.logo_2{
+	display: none;
+}
+
+@media (max-width: 1198px)
+{
+	#general{
+		width: 90%;
+	}
+}
+
+@media (max-width: 991px)
+{
+	#general{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px)
+{
+	#general{
+		width: 90%;
+	}
+	.iconos{
+		margin-left: 4em;
+	}
+	.logoNombre{
+	position: absolute;
+	top: 20px;
+	}
+
+}
+
+@media (max-width: 600px)
+{
+
+	.logoNombre{
+		display: none;
+	}
+
+	.logo_2{
+		display: block;
+		width: 120px;
+	}
+
+	.iconos-header{
+		font-size: 250%;
+	}
+
+	.iconos{
+		width: 140px;
+	}
+
+	.columna2{
+		padding-right: 0;
+	}
+
+	.iconos{
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 350px)
+{
+	.iconos-header{
+		font-size: 220%;
+	}
+	.iconos{
+		width: 120px;
+		margin-top: 1.5em;
+	}
+	.columna2{
+		padding-left: 0;
+	}
+}
