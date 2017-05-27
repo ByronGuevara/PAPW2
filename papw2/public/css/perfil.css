@@ -1,0 +1,630 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 12pt;
+	background-image: url("../img/Fondo.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+}
+
+div #f{
+	width: 100%;
+	height: 370px;
+}
+
+div #f img{
+	width: 100%;
+	height: 100%;
+	border-radius: 14px;
+}
+
+
+div #perfil{
+	float:left;
+	position: relative;
+	width: 30%;
+	height: 210px;
+	background-color: rgba(255,255,255,1);
+	padding: 7px;
+	box-shadow:0 0.1px 0.1px 0.1px;
+	border-radius: 12px;
+	margin: -20% 0 0 15px;
+}
+
+#general{
+	margin: 0 auto;	
+	background-color: rgba(204,178,141,0.8);
+	height: 122px;
+	border-radius:2px;
+	box-shadow:0 0.6px 0.9px 0.6px;
+	width: 80%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+	padding-top: 0.7em;
+}
+
+.iconos-header{
+	color: rgb(155,47,47);
+	/*color: rgb(195,52,52);*/
+	font-size: 300%;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.iconos-header:hover{
+	color: rgb(210,52,52); /* Green */
+}
+
+.quitar_a{
+	outline: none !important;
+}
+
+.quitar_a:hover{
+	text-decoration: none;
+}
+
+.iconos
+{
+	background-image: url("../img/Fondo.png");
+	box-shadow:0 0.1px 0.1px 0.1px;
+	border-radius:4px;
+	padding: 10px 2px 10px 2px;
+	width: 160px;
+	margin-top: 1em;
+}
+
+.logo_2{
+	display: none;
+}
+
+@media (max-width: 1198px)
+{
+	#general{
+		width: 90%;
+	}
+	.logoNombre{
+		margin-top: 0.2em;
+	}
+
+	div #perfil{	
+	height: 175px;
+	}
+
+	div #f{	
+	height: 310px;
+	}
+
+
+}
+
+@media (max-width: 991px)
+{
+	#general{
+		width: 100%;
+	}
+
+	.logoNombre{
+		margin-top: 0.7em;
+	}
+
+	.logo{
+		margin-top: 0.5em;
+	}
+
+	div #perfil{	
+	height: 195px;
+	}
+
+	div #f{	
+	height: 355px;
+	}
+}
+/*
+@media (max-width: 767px)
+{
+	#general{
+		width: 90%;
+	}
+	.iconos{
+		margin-left: 4em;
+	}
+	.logoNombre{
+	position: absolute;
+	top: 20px;
+	}
+	#Celular{
+		display: none;
+	}
+
+}
+
+@media (max-width: 600px)
+{
+
+	.logoNombre{
+		display: none;
+	}
+
+	.logo_2{
+		display: block;
+		width: 120px;
+	}
+
+	.iconos-header{
+		font-size: 250%;
+		-webkit-transition-duration: 0.0s; 
+    transition-duration: 0.0s;
+	}
+
+	.iconos{
+		width: 140px;
+	}
+
+	.columna2{
+		padding-right: 0;
+	}
+
+	.iconos{
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 350px)
+{
+	.iconos-header{
+		font-size: 220%;
+	}
+	.iconos{
+		width: 120px;
+		margin-top: 1.5em;
+	}
+	.columna2{
+		padding-left: 0;
+	}
+}
+
+/*
+
+/* ///////////////////////////////////////  HEADER PRINCIPAL //////////////////////////////////////////// */
+
+/* ///////////////////////////////////////     Botones Fer   //////////////////////////////////////////// */
+
+.boton_fer{
+	background: #E19B9B;
+	border: 1.2px solid #7D2D2D;
+	border-radius: 8px;
+	color: black;
+	
+	line-height: 24px;
+	padding: 0 10px;
+	text-align: center;
+	cursor:pointer; cursor: hand;
+	outline: none !important;
+}
+.boton_fer:hover{
+	transition: .3s ease;
+	background-color: rgb(155,47,47);
+	color: white;
+}
+
+/* Divs de las imagenes de perfil y portada  */
+
+div.inicio{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	padding: 10px 0px 10px 10px;
+	border-radius:6px;
+	box-shadow:0 0.3px 0.3px 0.3px;
+	background-image: url("../img/Fondo2.png");
+	height: auto;
+	overflow: hidden;
+	margin-left: 0;
+	margin-right: 0;
+	
+}
+div #fondo{
+	margin: 0 auto;
+	width: 96%;
+	height: 50%;
+	background: rgba(0,0,0,0.0);
+	padding: 7px;
+	box-shadow:0 0.1px 0.1px 0.1px;
+	border-radius: 12px;
+}
+div #fondo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 14px;
+}
+div #perfil img{
+	width: 100%;
+	height: 100%;
+	border-radius: 14px;
+}
+
+input[type="file"] {
+display: none;
+} 
+
+.div-cambiar_foto_perfil{
+	visibility: hidden;
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 14px;
+	margin-top: -26.5px;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.cambiar_foto_perfil:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.div-cambiar_foto_portada{
+	position: relative;
+	float: right;
+	margin-right: 1em;
+	margin-top: -50px;
+	color: rgba(255,255,255,.4);
+	text-align: center;
+	font-size: 2em;
+}
+
+.cambiar_foto_portada:hover{
+	color: rgba(255,255,255,1.0);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+div #fondo img:hover + div{
+	color: rgba(255,255,255,.75);
+}
+
+div #info{
+	display: none;
+}
+
+/*  ////////////////////////    Seccion de modificar informacion  /////////////////////////////////*/
+
+#Encabezado {
+	clear: both;
+	width: 30%;
+	margin-left: 50%;
+	border-radius: 8px;
+}
+
+#Configuracion{
+	position: relative;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	border-radius: 8px;
+	box-shadow:0 0.3px 0.3px 0.3px;
+	padding: 10px 12px 10px 16px;
+	margin-top: 0;
+	margin-right: 13px;
+	margin-left: 0;
+	padding-top: 0;
+	display: none;
+}
+
+#Configurar{
+	margin-top: -50%;
+}
+
+.vamo{
+	margin-top: 1em;
+}
+
+	/* ////////////////////////////  Informacion del perfil relevante  /////////////////////////////// */
+
+#Barra{
+	float: right;
+	position: relative;
+	width: 100%;
+	margin: -50% -10% 0 0;
+}
+
+#Nombre{
+	float: left;
+	background-color: rgba(255,240,240,0.9);
+	padding: 4px 10px 4px 5px;
+	margin-right: 5%;
+	font-weight: bold;
+	border-radius: 12px;
+	color: #3971b3;
+	font-size: 1.08em;
+}
+
+#Edad{
+	float: left;
+	background-color: rgba(255,240,240,0.9);
+	padding: 4px 10px 4px 8px;
+	border-radius: 12px;
+	font-size: 1.08em;
+	margin-right: 5%;
+}
+
+#Celular{
+	float: left;
+	background-color: rgba(255,240,240,0.9);
+	padding: 4px 10px 4px 8px;
+	border-radius: 12px;
+	font-size: 1.08em;
+}
+
+
+/*  //////////////////////////////////    Modales Cambio de Fotos    //////////////////////////////// */ 
+
+.modal-dialog
+{
+box-shadow: 0 0 2em orange;
+width: 300px;
+border: none;
+border-radius: 10px;
+}
+
+.modal-content{
+	border: none;
+}
+
+.modal-header{
+	background: rgba(223,150,68,0.9);
+}
+
+.modal-title{
+	font-weight: bold;
+	width: 170px;
+}
+.img-header{
+	width: 60px;
+}
+
+.img-modal{
+	width: 60px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.img-modal, .modal-title{
+	display: inline-flex;
+	vertical-align: center;
+}
+
+
+/* //////////////////////////    Medias Queries     ///////////////////////////////////*/ 
+
+@media (max-width: 767px)
+{
+	#general{
+		width: 90%;
+	}
+	.iconos{
+		margin-left: 4em;
+	}
+	.logoNombre{
+	position: absolute;
+	top: 20px;
+	margin-top: 0;
+
+	}
+	#Celular{
+		display: none;
+	}
+
+	div #perfil{	
+	height: 180px;
+	}
+
+}
+
+@media (max-width: 735px)
+{
+	div #f{	
+	height: 345px;
+	}	
+}
+
+@media (max-width: 700px)
+{
+	div #f{	
+	height: 320px;
+	}	
+}
+
+@media (max-width: 630px)
+{
+	div #perfil{	
+	height: 165px;
+	}
+
+	div #f{	
+	height: 290px;
+	}
+}
+
+@media (max-width: 600px)
+{
+
+	.logoNombre{
+		display: none;
+	}
+
+	.logo_2{
+		display: block;
+		width: 120px;
+	}
+
+	.iconos-header{
+		font-size: 250%;
+		-webkit-transition-duration: 0.0s; /* Safari */
+    transition-duration: 0.0s;
+	}
+
+	.iconos{
+		width: 140px;
+	}
+
+	.columna2{
+		padding-right: 0;
+	}
+
+	.iconos{
+		margin-left: 0;
+	}
+
+	#Edad{
+		display: none;
+	}
+
+
+	div #perfil{	
+	height: 150px;
+	}
+
+	div #f{	
+	height: 275px;
+	}
+}
+
+@media (max-width: 550px)
+{
+	div #f{	
+	height: 250px;
+	}
+
+}
+
+@media (max-width: 490px)
+{
+	div #perfil{	
+	height: 130px;
+	}
+
+	div #f{	
+	height: 230px;
+	}
+
+}
+
+@media (max-width: 450px)
+{
+	#Nombre{
+		display: none;
+	}
+
+	div #info
+	{
+	display: block;
+	width: 95%;
+	text-align: center;
+	color: #3971b3;
+	font-weight: bold;
+	background: rgba(255,255,255,.3);
+	}
+
+	#Configurar{
+		font-size: 0.6em;
+	}
+
+	.vamo{
+		width: 100%;
+	}
+
+
+	div #perfil{	
+	height: 120px;
+	}
+
+	div #f{	
+	height: 220px;
+	}
+}
+
+@media (max-width: 410px)
+{
+	div #perfil{	
+	height: 100px;
+	}	
+	div #f{	
+	height: 190px;
+	}
+}
+
+@media (max-width: 350px)
+{
+	.iconos-header{
+		font-size: 180%;
+	}
+	.iconos{
+		width: 100px;
+		margin-top: 1.5em;
+	}
+	.columna2{
+		padding-left: 0;
+	}
+	#Encabezado{
+		margin-left: 40%;
+	}
+
+	.modal-dialog{
+		width: 240px;
+	}
+
+	.img-modal{
+		width: 50px;
+	}
+	
+	.modal-title{
+		width: 100px;
+		font-size: .99em;		
+	}
+
+
+	div #perfil{	
+	height: 85px;
+	}
+
+	div #f{	
+	height: 160px;
+	}
+}
+
+.retraso{
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s; /* Safari */
+    -moz-animation-delay: 1s;
+}
+
+.retraso2{
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s; /* Safari */
+    -moz-animation-delay: 2s;
+}
+
+.retraso3{
+	animation-delay: 3s;
+	-webkit-animation-delay: 3s; /* Safari */
+    -moz-animation-delay: 3s;
+}
+
+.mis_resenas{
+	margin-bottom: 1em;
+}
+
+.mis_resenas:hover{
+	cursor: pointer;
+}
+
+#Contenedor{
+	display: none;
+}
+
+.resenas_botones{
+	margin-right: 1em;
+	float: right;
+}

@@ -24,7 +24,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
     <header>
 
         <div class="container">
@@ -42,15 +41,16 @@
 
                     <div class="col-xs-6 col-sm-3 col-md-3 iconos">
 
-                        <a href="" class="quitar_a" title="Inicio"> <span class="glyphicon glyphicon-home iconos-header"></span> </a>
-                        <a href="" class="quitar_a" title="Tu Perfil"> <span class="glyphicon glyphicon-user iconos-header"></span> </a>
-                        <a href="" class="quitar_a" title="Cerrar Sesión"> <span class="glyphicon glyphicon-off iconos-header"></span> </a>
+                        <a href="/principal" class="quitar_a" title="Inicio"> <span class="glyphicon glyphicon-home iconos-header"></span> </a>
+                        <a href="/perfil" class="quitar_a" title="Tu Perfil"> <span class="glyphicon glyphicon-user iconos-header"></span> </a>
+                        <a href="/inicio" class="quitar_a" title="Cerrar Sesión"> <span class="glyphicon glyphicon-off iconos-header"></span> </a>
 
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
 
 
     <div class="container">

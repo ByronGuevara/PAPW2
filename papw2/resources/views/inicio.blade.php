@@ -13,8 +13,9 @@
 
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/PAPW2.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/PAPW2_inicio.css') }}" rel="stylesheet">
         <link href="{{ asset('css/icomoon.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/sweetalert.css') }}" rel="stylesheet">
 
         <script src="{{ asset('js/vendor/modernizr-2.8.3.min.js') }}"></script>
 
@@ -42,7 +43,7 @@
             </div>
             <div class="collapse navbar-collapse" id="menu">
               <ul class="nav navbar-nav navbar-right app-nav">
-                <li><a class="minusculas" href="#"> Inicio </a></li>
+                <li><a class="minusculas" href="/inicio"> Inicio </a></li>
                 <li><a class="minusculas" href="#" data-toggle="modal" data-target="#mimodal2"> Ingresar </a></li>
                 <li><a class="crear_cuenta minusculas" href="#" data-toggle="modal" data-target="#mimodal"> Crear Cuenta </a></li>
               </ul>
@@ -66,34 +67,8 @@
 
                     <div class="modal-body">
 
-                    <form>
-                    <br>
-                      <div class="form-group">
-                        <label for="Nombre" class="sr-only"> Nombre </label>
-                        <input type="text" class="form-control" id="Nombre" placeholder="Nombre de Usuario">      
-                      </div>
-                      <div class="form-group">
-                        <label for="Correo" class="sr-only"> Correo </label>
-                        <input type="text" class="form-control" id="Correo" placeholder="Correo">      
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input  id="pass" type="password" class="form-control" placeholder="Contraseña">
-                            <span class="input-group-btn">
-                              <button id="ver_contra" class="btn btn-secondary" type="button" onmousedown="mostrar()" onmouseup="ocultar()" title="Ver Contraseña"><span class="glyphicon glyphicon-eye-open"></span></button>
-                            </span>
-                          
-                        </div>
-                      </div>
-
-                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-
-                      <a class="lab text-center center-block" href="" data-toggle="modal" data-target="#mimodal2" data-dismiss="modal"> ¿Ya tienes cuenta? Ingresar </a>
-
-                      <button type="button" id="Registro_Completo" class="btn btn-primary btn-block disabled"> Registrarse </button>
-
-                      </form>
+                        @section('form_registro')
+                        @show
 
                     </div>
 
@@ -116,31 +91,9 @@
                     </div>
 
                     <div class="modal-body">
-
-                        <form id="form_Login">
-                    <br>
-
-                      <div class="form-group">
-                        <label for="Correo" class="sr-only"> Correo </label>
-                        <input type="email" class="form-control" id="Correo_ingresar" placeholder="Correo" required>      
-                      </div>
-                      <div class="form-group">
-                        <label for="Contraseña" class="sr-only"> Contraseña </label>
-                        <input type="password" class="form-control" id="pass_ingresar" placeholder="Contraseña">
-                                              <a class="lab center-block olvidaste" href=""> ¿Olvidaste tu contraseña ? </a>
-
-                      </div>
-                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-
-
-                      <button  type="button" class="btn btn-primary ingresar"> Ingresar </button>
-
-
-                      <a class="lab2 text-center center-block" href="" data-toggle="modal" data-target="#mimodal" data-dismiss="modal"> ¿No tienes cuenta? Regístrate </a>
-                      
-                    </form>
-
+                    
+                        @section('form_login')
+                        @show
 
                     </div>
               </div>   
@@ -318,8 +271,9 @@
 
                 <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
 
-                <script src="{{ asset('js/form.js') }}"></script>
+                <script src="{{ asset('js/form2.js') }}"></script>
 
+                <script src="{{ asset('js/sweetalert.min.js') }}"></script>
 
 
   <script>
@@ -346,11 +300,13 @@ $.ajaxSetup({
                       console.log(data);
                       if(data == "true")
                       {
-                        alert("Usuario Agregado Correctamente")
+                            $('#mimodal').modal('hide');
+                            swal("¡Bienvenido!", "Registro Realizado Correctamente", "success");
+
                       }
                       else
                       {
-                        alert("Este Correo Ya Fue Registrado") 
+                            swal("", "Este Correo ya fue registrado", "error");  
                       }
 
 
@@ -371,22 +327,30 @@ $.ajaxSetup({
 
                             }, function(data) {
                                 console.log(data);
-                                  if(data == "true")
+                                  if(data == "")
                                   {
-                                    alert("Bienvenido");
-                                    window.location="{{URL::to('principal')}}";
-
+                                    swal("", "Usuario o Contraseña Equivocada", "warning");  
                                   }
                                   else
                                   {
-                                    alert("Usuario o Contraseña Equivocada"); 
+                                    if(data == "true")
+                                    {
+                                    alert("Bienvenido Administrador");
+                                    window.location="{{URL::to('admin')}}";
+                                    }
+                                    else
+                                    {
+                                    alert("Bienvenido");
+                                    window.location="{{URL::to('principal')}}";
+                                    }
+                                    
                                   }
     
                         });
                     }
                     else
                     {
-                        alert('Faltan campos por llenar');                        
+                        swal("", "Faltan Campos por Llenar", "warning");  
                     }
 
     });

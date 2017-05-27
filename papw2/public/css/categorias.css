@@ -1,0 +1,64 @@
+.Noticias .Suspenso{
+	background-color:rgba(170, 183, 184,0.9); 	/* Gris */
+}
+.Noticias .Suspenso:hover{
+	background-color:rgba(170, 183, 184,1);
+	cursor:pointer;
+}
+
+.Noticias .Aventuras{
+	background-color:rgba(82, 190, 128,0.9);	/* Verde */
+}
+.Noticias .Aventuras:hover{
+	background-color:rgba(82, 190, 128,1);
+	cursor:pointer;
+}
+
+.Noticias .Ficción{
+	background-color:rgba(115, 198, 182,0.9);	/* Menta */
+}
+.Noticias .Ficción:hover{
+	background-color:rgba(115, 198, 182,1);
+	cursor:pointer;
+}
+
+.Noticias .Acción{
+	background-color:rgba(52, 152, 219,0.9);	 /* Azul */
+}
+.Noticias .Acción:hover{
+	background-color:rgba(52, 152, 219,1);
+	cursor:pointer;
+}
+
+.Noticias .Romance{
+	background-color:rgba(205, 97, 85,0.9);    /* Guindo */
+}
+.Noticias .Romance:hover{
+	background-color:rgba(205, 97, 85,1);
+	cursor:pointer;
+}
+
+.Noticias .Otro{
+	background-color:rgba(165, 105, 189,0.9);			/* Morado */
+}
+.Noticias .Otro:hover{
+	background-color:rgba(165, 105, 189,1);
+	cursor:pointer;
+}
+
+.Noticias .Infantil{
+	background-color:rgba(245, 176, 65,0.9); 	/* Amarillo*/
+}
+.Noticias .Infantil:hover{
+	background-color:rgba(245, 176, 65,1);
+	cursor:pointer;
+}
+
+.Noticias .Terror{
+	background-color:rgba(238,140,87,0.9);	/* Naranja */
+}
+.Noticias .Terror:hover{
+	background-color:rgba(240,140,90,1);
+	cursor:pointer;
+}
+

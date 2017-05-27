@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use Illuminate\Support\Facades\DB;
+use App\Noticia;
 
 
-
-class UsuarioController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +16,10 @@ class UsuarioController extends Controller
     public function index()
     {
         //
-                            session()->forget('datos');
+            $usuarios = Noticia::Noticias();
+        //$usuarios = Noticia::where('titulo','=', 'Dr. House')->get();
 
-        return view('Layouts.Formularios.registro');
-
+        return view('Layouts.admin_noticias', compact('usuarios'));
     }
 
     /**
@@ -42,23 +40,8 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        /*
-\App\User::create([
-
-'name' => 'Lol',
-'email' => 'Lol@gmail.com',
-'password' => 'yess'
-
-]);
-
-$users = 'Jalooo';
-
- dd($users);
-
- */
-   
+        //
     }
-
 
     /**
      * Display the specified resource.

@@ -1,0 +1,527 @@
+.app-header{
+	background: url("../img/libros2.jpg") no-repeat center top fixed;
+	font-family: "Avenir", Futura, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 80px;
+}
+
+.app-navbar{
+	background: rgba(223,150,68,0.3);
+	border-radius: 0;
+}
+
+.app-link{
+	color: white;
+	text-shadow: none;
+	padding-top: 2px;
+}
+
+.app-link:hover{
+	color: white;
+}
+
+.minusculas{
+	text-transform: none;
+	font-size: 1.2em;
+}
+
+.app-nav>li>a{
+	color: white;
+	text-shadow: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.app-nav>li>a:hover{
+	font-size: 1.3em;
+	background: none;
+	text-transform: underline;
+	box-shadow: inset 0 -3px 0 0 orange;
+	padding-bottom: .5em;
+}
+
+.app-nav>li>a:focus{
+	font-size: 1.2em;
+	background: none;
+	text-transform: underline;
+	border-bottom: 2px solid black;
+	padding-bottom: .5em;
+	border: none;
+	outline: none;	
+}
+
+.app-icon{
+	background: white;
+}
+
+.app-seccion1{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 170px;
+}
+
+.app-titulo{
+	text-align: center;
+	color: white;
+	font-size: 2.8em;
+	margin-bottom: 35px;
+}
+
+.app-resaltar{
+	color: orange;
+	font-weight: bold;
+}
+
+.app-descripcion{
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: 100px;
+}
+
+.app-formulario1{
+	width: 40%;
+	margin: 0 auto;
+}
+
+.app-formulario2{
+	padding: 15px 25px 25px 25px;
+	background: rgba(0,0,0,0.6);
+}
+
+.app-input{
+	height: 50px;
+	margin-top: 10px;
+}
+
+.app-boton{
+	margin-top: 10px;
+	height: 50px;
+	background: #0080d6;
+	color: white;
+	box-shadow: 0 0 1em #0080d6;
+}
+
+.app-boton:hover{
+	box-shadow: 0 0 2em orange;
+	color: white;
+}
+
+.app-boton:hover,
+.app-boton:focus,
+.app-boton.focus {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+.app-seccion2{
+	margin: 80px 0;
+}
+
+.app-titulo2{
+	margin-top: 0;
+}
+
+.app-separador{
+	width: 100px;
+	border-bottom: 1px solid #0080d6;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.app-justificar{
+	text-align: justify;
+	color: #727272;
+}
+
+.app-media{
+	margin-top: 40px;
+}
+
+.app-glyphicon1{
+	background-color: #ff4444;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.app-glyphicon1-2{
+	background-color: #f39c12;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.app-seccion3{
+	background: #f7f8fa;
+	padding: 80px 0;
+}
+
+.app-contenedor{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.app-separador2{
+	width: 100px;
+	border-bottom: 1px solid #0080d6;
+	margin: 20px auto;
+}
+
+.glyphicon2{
+	color: rgba(107,55,20,1.0);
+	font-size: 60px;
+
+}
+
+.app-descripcion2{
+	color: #727272;
+}
+
+.app-lista1{
+	background-color: #f39c12;
+	color: white;
+	text-align: center;
+}
+
+.app-lista2{
+	background-color: #0080d6;
+	color: white;
+	text-align: center;
+}
+
+.app-lista3{
+	background-color: #323232;
+	color: white;
+	text-align: center;
+}
+
+.app-precio{
+	text-align: center;
+}
+
+.app-pago{
+	font-weight: bold;
+	margin-right: 30px;
+}
+
+.app-btn1{
+	background-color: #f39c12;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.app-btn2{
+	background-color: #0080d6;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.app-btn3{
+	background-color: #323232;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.app-btn3:hover{
+	color: gray;
+}
+
+.app-video{
+	margin: 0 auto;
+	width: 70%;
+}
+
+.app-footer{
+	text-align: center;
+	background: rgba(107,55,20,0.85);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 30px 0;
+}
+
+.app-empresa{
+	margin-bottom: 50px;
+}
+
+.app-icon1{
+	background-color: rgba(107,55,20,1.0);
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+.face:hover{
+background: #3b5998;
+cursor: pointer;
+}
+
+.twi:hover{
+background: #55acee;
+cursor: pointer;
+}
+
+.goog:hover{
+background: #dd4b39;
+cursor: pointer;
+}
+
+.texto-footer{
+	color: white;
+}
+
+/* Boton Scroll */
+
+.ir-arriba{
+	opacity: .7;
+	display:none;
+	padding:30px;
+	background-image: url("../img/subir2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:30px;
+	right:30px;
+}
+
+.ir-arriba:hover{
+	opacity: 1;
+}
+
+
+@media (max-width: 767px){
+	.app-seccion1{
+		width: 90%;
+	}
+
+	.app-titulo{
+		font-size: 1.8em;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.app-descripcion{
+		font-size: 1.0em;
+		margin-bottom: 50px;
+	}
+
+	.img-cnt{
+		margin: 0 auto;
+	}
+
+	.app-nav>li>a:hover{
+		box-shadow: none;
+	}
+}
+
+@media (max-width: 500px)
+{
+	
+	.app-formulario1{
+	width: 100%;
+	margin: 0 auto;
+	}	
+
+	.app-seccion1{
+		margin-top: 100px;
+	}
+
+	.ir-arriba{
+		padding: 20px;
+	}
+}
+
+.fijar
+{
+	margin-top: -110px;
+}
+
+.modal-dialog
+{
+box-shadow: 0 0 2em orange;
+width: 300px;
+border: none;
+border-radius: 10px;
+}
+
+.modal-content{
+	border: none;
+}
+
+.modal-header{
+	background: rgba(223,150,68,0.9);
+}
+
+.modal-title{
+	font-weight: bold;
+	width: 170px;
+}
+
+.lab{
+	color: gray;
+	text-align: center;
+	margin-top: 0;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-size: 0.8em;
+	width: 170px;
+}
+
+.lab:focus{
+	outline: none;
+	color: gray;
+}
+
+.lab2{
+	width: 180px;
+	color: gray;
+	text-align: center;
+	margin-top: 0;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-size: 0.8em;
+}
+
+.lab2:focus{
+	outline: none;
+	color: gray;
+}
+
+.ingresar{
+	width: 100%;
+	margin-bottom: 1em;
+	outline: 0 !important;
+}
+
+#ver_contra{
+	outline: none;
+	/*background: none;
+	border: .5px solid #ccc;
+	opacity: 50%;
+	border-left: none;*/
+}
+
+#ver_contra:hover{
+color: #3b5998;
+}
+
+/*#pass{
+	border-right: none;
+}*/
+
+.img-header{
+	width: 60px;
+}
+
+.img-modal{
+	width: 60px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.img-modal, .modal-title{
+	display: inline-flex;
+	vertical-align: center;
+}
+
+.app-nombre{
+	width: 220px;
+}
+.olvidaste{
+	margin-top: 1em;
+}
+
+@media (max-width: 330px)
+{
+	
+	.modal-dialog{
+		width: 240px;
+	}
+
+	.img-modal{
+		width: 50px;
+	}
+	
+	.modal-title{
+		width: 100px;
+		font-size: .99em;		
+	}
+}
+
+@media (max-width: 318px){
+	.img-header{
+		width: 40px;
+		margin-top: 7px;
+	}
+
+	.app-link{
+		padding-right: 0;
+		font-size: 17.5px;
+		letter-spacing: 1px;
+		padding-left: .2em;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.img-header, .app-link{
+		vertical-align: bottom;
+	}
+
+}
+
+/*
+
+input[type="text"]:hover, input[type="password"]:hover{
+	border: 1px solid gray;
+
+}
+
+*/
+
+.input_vacio{
+  	border-color: #a94442;
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.input_lleno{
+  	border-color: #3c763d;
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.a_span{
+	text-decoration: none;
+	text-transform: none;
+	outline: none;
+}
+
+.a_span:hover, .a_span:focus{
+	text-decoration: none;
+	text-transform: none;
+	outline: none;
+}
+
+#Registro_Completo{
+	margin-top: 1em;
+	outline: 0;
+}
+
+.spann{
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: red;
+	text-transform: none;
+	margin-top: .2em;
+	text-align: center;
+}
